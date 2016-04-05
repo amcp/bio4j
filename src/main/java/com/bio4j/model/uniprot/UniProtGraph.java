@@ -2581,7 +2581,7 @@ I, RV, RVT, RE, RET
   Journal<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.JournalType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public ArticleJournalType(RET raw) {
       super(UniProtGraph.this.Article(), raw, UniProtGraph.this.Journal());
@@ -2688,7 +2688,7 @@ I, RV, RVT, RE, RET
   City<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.CityType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public BookCityType(RET raw) {
       super(UniProtGraph.this.Book(), raw, UniProtGraph.this.City());
@@ -2713,7 +2713,7 @@ I, RV, RVT, RE, RET
   Person<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.PersonType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public BookEditorType(RET raw) {
       super(UniProtGraph.this.Book(), raw, UniProtGraph.this.Person());
@@ -2738,7 +2738,7 @@ I, RV, RVT, RE, RET
   Publisher<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.PublisherType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public BookPublisherType(RET raw) {
       super(UniProtGraph.this.Book(), raw, UniProtGraph.this.Publisher());
@@ -2763,7 +2763,7 @@ I, RV, RVT, RE, RET
   Country<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.CountryType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public InstituteCountryType(RET raw) {
       super(UniProtGraph.this.Institute(), raw, UniProtGraph.this.Country());
@@ -2788,7 +2788,7 @@ I, RV, RVT, RE, RET
   OnlineJournal<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.OnlineJournalType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public OnlineArticleOnlineJournalType(RET raw) {
       super(UniProtGraph.this.OnlineArticle(), raw, UniProtGraph.this.OnlineJournal());
@@ -2833,7 +2833,7 @@ I, RV, RVT, RE, RET
   CommentType<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.CommentTypeType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinCommentType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.CommentType());
@@ -3131,7 +3131,7 @@ I, RV, RVT, RE, RET
   Disease<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.DiseaseType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public final text text = new text();
     public final status status = new status();
@@ -3212,7 +3212,7 @@ I, RV, RVT, RE, RET
   EMBL<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.EMBLType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinEMBLType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.EMBL());
@@ -3237,7 +3237,7 @@ I, RV, RVT, RE, RET
   Ensembl<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.EnsemblType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinEnsemblType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Ensembl());
@@ -3262,7 +3262,7 @@ I, RV, RVT, RE, RET
   FeatureType<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.FeatureTypeType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public final description description = new description();
     public final id id = new id();
@@ -3451,7 +3451,7 @@ I, RV, RVT, RE, RET
   GeneLocation<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.GeneLocationType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public final name name = new name();
 
@@ -3497,7 +3497,7 @@ I, RV, RVT, RE, RET
   AlternativeProduct<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.AlternativeProductType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public IsoformEventGeneratorType(RET raw) {
       super(UniProtGraph.this.Isoform(), raw, UniProtGraph.this.AlternativeProduct());
@@ -3522,7 +3522,7 @@ I, RV, RVT, RE, RET
   InterPro<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.InterProType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinInterProType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.InterPro());
@@ -3547,7 +3547,7 @@ I, RV, RVT, RE, RET
   Kegg<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.KeggType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinKeggType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Kegg());
@@ -3572,7 +3572,7 @@ I, RV, RVT, RE, RET
   Pfam<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.PfamType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinPfamType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Pfam());
@@ -3597,7 +3597,7 @@ I, RV, RVT, RE, RET
   PIR<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.PIRType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinPIRType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.PIR());
@@ -3634,7 +3634,7 @@ I, RV, RVT, RE, RET
   Protein<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.ProteinType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinProteinInteractionType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Protein());
@@ -3733,7 +3733,7 @@ I, RV, RVT, RE, RET
   Isoform<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.IsoformType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinIsoformType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Isoform());
@@ -3768,7 +3768,7 @@ I, RV, RVT, RE, RET
   Isoform<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.IsoformType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinIsoformInteractionType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Isoform());
@@ -3867,7 +3867,7 @@ I, RV, RVT, RE, RET
   ReactomeTerm<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.ReactomeTermType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinReactomeTermType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.ReactomeTerm());
@@ -3892,7 +3892,7 @@ I, RV, RVT, RE, RET
   Reference<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.ReferenceType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinReferenceType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.Reference());
@@ -3917,7 +3917,7 @@ I, RV, RVT, RE, RET
   RefSeq<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.RefSeqType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinRefSeqType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.RefSeq());
@@ -3942,7 +3942,7 @@ I, RV, RVT, RE, RET
   SequenceCaution<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.SequenceCautionType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public final evidence evidence = new evidence();
     public final status status = new status();
@@ -4095,7 +4095,7 @@ I, RV, RVT, RE, RET
   SubcellularLocation<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.SubcellularLocationType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public final evidence evidence = new evidence();
     public final status status = new status();
@@ -4194,7 +4194,7 @@ I, RV, RVT, RE, RET
   UniGene<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.UniGeneType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ProteinUniGeneType(RET raw) {
       super(UniProtGraph.this.Protein(), raw, UniProtGraph.this.UniGene());
@@ -4219,7 +4219,7 @@ I, RV, RVT, RE, RET
   Consortium<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.ConsortiumType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ReferenceAuthorConsortiumType(RET raw) {
       super(UniProtGraph.this.Reference(), raw, UniProtGraph.this.Consortium());
@@ -4244,7 +4244,7 @@ I, RV, RVT, RE, RET
   Person<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.PersonType
   >
   implements
-  TypedEdge.Type.ManyToMany {
+  TypedEdge.Type.AtLeastOneToAtLeastOne {
 
     public ReferenceAuthorPersonType(RET raw) {
       super(UniProtGraph.this.Reference(), raw, UniProtGraph.this.Person());
@@ -4521,7 +4521,7 @@ I, RV, RVT, RE, RET
   SubcellularLocation<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.SubcellularLocationType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public SubcellularLocationParentType(RET raw) {
       super(UniProtGraph.this.SubcellularLocation(), raw, UniProtGraph.this.SubcellularLocation());
@@ -4546,7 +4546,7 @@ I, RV, RVT, RE, RET
   DB<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.DBType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public SubmissionDBType(RET raw) {
       super(UniProtGraph.this.Submission(), raw, UniProtGraph.this.DB());
@@ -4571,7 +4571,7 @@ I, RV, RVT, RE, RET
   Institute<I,RV,RVT,RE,RET>, UniProtGraph<I,RV,RVT,RE,RET>.InstituteType
   >
   implements
-  TypedEdge.Type.ManyToOne {
+  TypedEdge.Type.AtLeastOneToOne {
 
     public ThesisInstituteType(RET raw) {
       super(UniProtGraph.this.Thesis(), raw, UniProtGraph.this.Institute());

@@ -69,7 +69,7 @@ public abstract class UniProtNCBITaxonomyGraph<
       NCBITaxonomyGraph<I, RV, RVT, RE, RET>
       >
     implements
-    TypedEdge.Type.ManyToOne
+    TypedEdge.Type.AtLeastOneToOne
   {
 
   public ProteinNCBITaxonType(RET raw) {

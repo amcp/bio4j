@@ -69,7 +69,7 @@ public abstract class UniProtGoGraph<
     GoGraph<I, RV, RVT, RE, RET>
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public GoAnnotationType(RET raw) {

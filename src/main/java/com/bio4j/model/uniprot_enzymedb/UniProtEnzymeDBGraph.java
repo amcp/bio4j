@@ -69,7 +69,7 @@ public abstract class UniProtEnzymeDBGraph<
       EnzymeDBGraph<I, RV, RVT, RE, RET>
       >
     implements
-    TypedEdge.Type.ManyToMany
+    TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public EnzymaticActivityType(RET raw) {

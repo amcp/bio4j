@@ -240,7 +240,7 @@ implements
     GoTerm<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.GoTermType
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public PartOfType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.GoTerm()); }
@@ -260,7 +260,7 @@ implements
     GoTerm<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.GoTermType
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public HasPartOfType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.GoTerm()); }
@@ -280,7 +280,7 @@ implements
     GoTerm<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.GoTermType
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public IsAType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.GoTerm()); }
@@ -300,7 +300,7 @@ implements
     GoTerm<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.GoTermType
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public NegativelyRegulatesType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.GoTerm()); }
@@ -323,7 +323,7 @@ implements
     GoTerm<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.GoTermType
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public PositivelyRegulatesType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.GoTerm()); }
@@ -346,7 +346,7 @@ implements
     GoTerm<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.GoTermType
   >
   implements
-  TypedEdge.Type.ManyToMany
+  TypedEdge.Type.AtLeastOneToAtLeastOne
   {
 
   public RegulatesType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.GoTerm()); }
@@ -369,7 +369,7 @@ implements
     SubOntologies<I,RV,RVT,RE,RET>,GoGraph<I,RV,RVT,RE,RET>.SubOntologiesType
   >
   implements
-  TypedEdge.Type.ManyToOne
+  TypedEdge.Type.AtLeastOneToOne
   {
 
   public SubOntologyType(RET raw) { super(GoGraph.this.GoTerm(), raw, GoGraph.this.SubOntologies()); }

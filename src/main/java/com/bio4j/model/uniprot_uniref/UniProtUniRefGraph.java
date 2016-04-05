@@ -101,7 +101,7 @@ public abstract class UniProtUniRefGraph<
       UniRefGraph<I, RV, RVT, RE, RET>
       >
     implements
-    TypedEdge.Type.ManyToOne {
+    TypedEdge.Type.AtLeastOneToOne {
 
   public UniRef50MemberType(RET raw) {
 
@@ -144,6 +144,7 @@ public abstract class UniProtUniRefGraph<
     return String.class;
     }
   }
+
   }
 
   public final class UniRef90MemberType
@@ -162,7 +163,7 @@ public abstract class UniProtUniRefGraph<
       UniRefGraph<I, RV, RVT, RE, RET>
       >
     implements
-    TypedEdge.Type.ManyToOne {
+    TypedEdge.Type.AtLeastOneToOne {
 
   public UniRef90MemberType(RET raw) {
 
@@ -223,7 +224,7 @@ public abstract class UniProtUniRefGraph<
       UniRefGraph<I, RV, RVT, RE, RET>
       >
     implements
-    TypedEdge.Type.ManyToOne {
+    TypedEdge.Type.AtLeastOneToOne {
 
   public UniRef100MemberType(RET raw) {
 

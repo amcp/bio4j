@@ -1,9 +1,7 @@
 package com.bio4j.model.uniprot_ncbiTaxonomy.programs;
 
-import com.bio4j.model.go.vertices.GoTerm;
 import com.bio4j.model.ncbiTaxonomy.vertices.NCBITaxon;
 import com.bio4j.model.uniprot.vertices.Protein;
-import com.bio4j.model.uniprot_go.UniProtGoGraph;
 import com.bio4j.angulillos.UntypedGraph;
 import com.bio4j.model.uniprot_ncbiTaxonomy.UniProtNCBITaxonomyGraph;
 
@@ -13,7 +11,6 @@ import com.bio4j.xml.XMLUtils;
 import java.io.*;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Stream;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;

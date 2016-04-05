@@ -2,7 +2,6 @@ package com.bio4j.model.uniprot_uniref.programs;
 
 import com.bio4j.model.uniprot.vertices.Protein;
 import com.bio4j.model.uniprot_uniref.UniProtUniRefGraph;
-import com.bio4j.model.uniprot_uniref.edges.*;
 import com.bio4j.model.uniref.vertices.UniRef100Cluster;
 import com.bio4j.model.uniref.vertices.UniRef50Cluster;
 import com.bio4j.model.uniref.vertices.UniRef90Cluster;
@@ -11,9 +10,7 @@ import com.bio4j.angulillos.UntypedGraph;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Stream;
 import java.util.Optional;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;

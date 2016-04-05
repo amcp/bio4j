@@ -28,7 +28,6 @@ public abstract class ImportNCBITaxonomy<I extends UntypedGraph<RV,RVT,RE,RET>,R
     // create input files
     final File nodesDumpFile  = new File(inFile, "nodes.dmp");
     final File namesDumpFile  = new File(inFile, "names.dmp");
-    final File mergedDumpFile = new File(inFile, "merged.dmp");
 
     int taxonCounter = 0;
     BufferedWriter statsBuff = null;
